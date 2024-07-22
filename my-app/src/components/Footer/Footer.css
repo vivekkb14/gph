@@ -1,0 +1,26 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding: 15px 8%;
+    justify-content: space-between;
+    /* display:grid */
+}
+
+.logo {
+    width: 30px;
+    /* padding: 1px; */
+    cursor: pointer;
+    height: 30px;
+    overflow: 'hidden';
+    border-radius: .5rem;
+    /* background-color: white; */
+}
+
+.text {
+    padding: 10px;
+}
