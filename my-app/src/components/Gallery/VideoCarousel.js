@@ -8,9 +8,10 @@ const VideoCarousel = () => {
 
   return (
     <div className='container'>
-      <div className='images-container'>
-        <p className='thirdComponent'>Video Gallary</p>
-      </div>
+      {/* <div className='images-container'>
+      
+      </div> */}
+        <p className='thirdComponent'>Video Gallery</p>
       <div className="images-container">
         {Media.map((file, index) => (
           <div

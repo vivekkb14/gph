@@ -1,45 +1,96 @@
-/* .component{
+.component {
     width: 100%;
-    text-align: -webkit-center;
+    text-align: center;
     margin: 0 auto;
     padding: 1rem;
-    text-align: center;
-    padding-left: 20rem;
-} */
-
-.inspection-image {
-    /* padding: 10%; */
-    margin-left: 5%;
-    margin-top: 5%;
-    border: 10px;
-    width: 35%;
-    /* height: 50%; */
-    /* height: 20%; */
-    margin-bottom: 5%;
-}
-
-.middleComponent {
+  }
+  
+  .middleComponent {
     display: flex;
-    padding-left: 6rem;
-    padding-right: 6rem;
-}
-
-.headTextComponent {
-    margin-top: 30%;
-    margin-left: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .inspection-image {
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem;
+  }
+  
+  .texts {
+    max-width: 600px;
+    text-align: center;
+    text-align: start;
+    padding-bottom: 15rem;
+    padding-right: 12rem;
+    width: 36rem;
+  }
+  
+  .headTextComponent {
     font-weight: bold;
-    font-size: 28px;
-    /* margin-bottom: 20%; */
-}
-
-.normalText {
-    margin-top: 2%;
-    margin-left: 30%;
-}
-
-.texts {
-    display: block;
-    padding-right: 18rem;
-    padding-top: 6rem;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+  }
+  
+  .normalText {
+    margin-top: 0.5rem;
     font-size: 1rem;
-}
+  }
+  
+  @media (min-width: 768px) {
+    .middleComponent {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .inspection-image {
+      width: 40%;
+      margin: 2rem;
+    }
+  
+    .texts {
+      text-align: left;
+      padding-left: 2rem;
+    }
+  
+    .headTextComponent {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  
+    .normalText {
+      font-size: 1.125rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .middleComponent {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  
+    .inspection-image {
+      width: 35%;
+      margin-left: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .texts {
+      padding-right: 4rem;
+      padding-top: 3rem;
+    }
+  
+    .headTextComponent {
+      margin-top: 30%;
+      margin-left: 0;
+      font-size: 2.25rem;
+    }
+  
+    .normalText {
+      margin-top: 2%;
+      margin-left: 0;
+    }
+  }
+  
