@@ -1,0 +1,45 @@
+/* .component{
+    width: 100%;
+    text-align: -webkit-center;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    padding-left: 20rem;
+} */
+
+.inspection-image {
+    /* padding: 10%; */
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 10px;
+    width: 35%;
+    /* height: 50%; */
+    /* height: 20%; */
+    margin-bottom: 5%;
+}
+
+.middleComponent {
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.headTextComponent {
+    margin-top: 30%;
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-bottom: 20%; */
+}
+
+.normalText {
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+.texts {
+    display: block;
+    padding-right: 18rem;
+    padding-top: 6rem;
+    font-size: 1rem;
+}
