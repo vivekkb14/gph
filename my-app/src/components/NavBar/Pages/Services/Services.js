@@ -1,5 +1,5 @@
 import React from 'react';
-import './ServicePage.css';
+import './Services.css';
 
 const servicesData = [
   {
@@ -52,7 +52,7 @@ const ServiceCard = ({ title, description, imageUrl }) => (
   </div>
 );
 
-const ServicePage = () => {
+export const Services = () => {
   return (
     <div className="services-container">
       <h1 className="services-header">Our Services</h1>
@@ -70,4 +70,4 @@ const ServicePage = () => {
   );
 };
 
-export default ServicePage;
+export default Services;

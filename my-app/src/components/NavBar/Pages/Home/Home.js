@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Home.css"
-import image1 from '../../../assets/dog-being-checked-by-vet-pet-shop.jpg'
-import machinesImage from '../../../assets/machines.png'
-import stethascpeImage from '../../../assets/stethascope.png'
-import doctors from '../../../assets/doctors.png'
+//import image1 from '../../../assets/dog-being-checked-by-vet-pet-shop.jpg'
+import image1 from '../../../../assets/dog-being-checked-by-vet-pet-shop.jpg'
+import machinesImage from '../../../../assets/machines.png'
+import stethascpeImage from '../../../../assets/stethascope.png'
+import doctors from '../../../../assets/doctors.png'
 
-const Home = () => {
+export const Home = () => {
   return (
     <>
         <div className="container-fluid">

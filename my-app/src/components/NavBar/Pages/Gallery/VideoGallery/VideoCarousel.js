@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media } from '../media/Media';
+import { Media } from '../../../../../assets/Media';
 import { useState } from 'react';
 import './VideoCarousel.css'; // Importing CSS for styling
 

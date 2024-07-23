@@ -6,8 +6,6 @@ import { Captions, Download, Fullscreen, Thumbnails, Zoom } from 'yet-another-re
 import Photos from './Photos';
 import './PhotoGallery.css';
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import v1 from '../media/v1.mp4';
-import Video from "yet-another-react-lightbox/plugins/video";
 
 const PhotoGallery = () => {
   const [index, setIndex] = useState(-1);

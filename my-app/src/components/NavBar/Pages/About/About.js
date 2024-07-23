@@ -1,8 +1,8 @@
 import React from 'react'
-import pic from '../media/Doctor1.webp';
-import './AboutPage.css';
+import pic from '../../../../assets/Doctor1.webp';
+import './About.css';
 
-export const AboutPage = () => {
+export const About = () => {
   return (
    <>
  <div className='component'>
@@ -18,4 +18,4 @@ export const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default About

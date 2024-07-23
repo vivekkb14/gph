@@ -1,13 +1,10 @@
-import Message from "./Message";
 import NavBar from "./components/NavBar/Navbar";
 import { Route, Routes } from "react-router-dom";
-import {About, Gallary, Services, Contact} from "./components/NavBar/Pages";
-// import {Gallary} from "./components/NavBar/Pages/Gallary"
-// import {Home} from "./components/NavBar/Pages/Home"
-// import {Services} from "./components/NavBar/Pages/Services"
-// import { Contact } from "./components/NavBar/Pages/Contact";
+import {Gallary, Contact, About, Services} from "./components/NavBar/Pages";
+//import About from "./components/NavBar/Pages/About";
+//import Services from "./components/NavBar/Pages/Services/Services";
 import Footer from "./components/Footer/Footer"
-import Home from "./components/NavBar/Pages/Home"
+import Home from "./components/NavBar/Pages/Home/Home"
 
 function App() {
   return (
@@ -16,7 +13,6 @@ function App() {
         <Routes>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/gallary" element={<Gallary/>}></Route>
-          {/* <Route path="/home" element={<Home/>}></Route> */}
           <Route path="/services" element={<Services/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/" element={<Home/>}></Route>
