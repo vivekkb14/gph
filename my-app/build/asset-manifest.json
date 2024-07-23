@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36bbc4ae.css",
+    "main.js": "/static/js/main.09bb5852.js",
+    "static/media/v1.mp4": "/static/media/v1.4b53e34b08cbb9d180e5.mp4",
+    "static/media/v3.mp4": "/static/media/v3.1db13f0ffa5b03f81fd6.mp4",
+    "static/media/v2.mp4": "/static/media/v2.8ece8d450b01e93bc64e.mp4",
+    "static/media/updated_gph.png": "/static/media/updated_gph.0ddcd72f3c9fd45ace11.png",
+    "static/media/dog-being-checked-by-vet-pet-shop.jpg": "/static/media/dog-being-checked-by-vet-pet-shop.f3ce6b7c1baed85b1b5b.jpg",
+    "static/media/instagram4.png": "/static/media/instagram4.ac31e22207e23b7186e8.png",
+    "static/media/gph_logo.png": "/static/media/gph_logo.5dbc4b14ff40aa6e7a5f.png",
+    "static/media/DayTheme.png": "/static/media/DayTheme.f86d1f3ebfb30366a209.png",
+    "static/media/NightTheme.png": "/static/media/NightTheme.a4f648a43309d6e18fe5.png",
+    "static/media/Doctor1.webp": "/static/media/Doctor1.25dde55a19b68a3cdb79.webp",
+    "static/media/doctors.png": "/static/media/doctors.b4ed2975e16c2e99dc8b.png",
+    "static/media/machines.png": "/static/media/machines.6970b93e31d5254cb103.png",
+    "static/media/stethascope.png": "/static/media/stethascope.9c93245bff9f828f34cf.png",
+    "index.html": "/index.html",
+    "main.36bbc4ae.css.map": "/static/css/main.36bbc4ae.css.map",
+    "main.09bb5852.js.map": "/static/js/main.09bb5852.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36bbc4ae.css",
+    "static/js/main.09bb5852.js"
+  ]
+}
