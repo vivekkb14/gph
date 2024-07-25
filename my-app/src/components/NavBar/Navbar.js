@@ -7,26 +7,29 @@ const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
         <nav>
-            <Link to="/"><img src={logo} className='gph-logo'/></Link>
+            <Link to="/">
+                <img onClick={()=> {setMenuOpen(!menuOpen)}} 
+                src={logo} className='gph-logo'/>
+            </Link>
             <div className='menu' onClick={()=> {setMenuOpen(!menuOpen)}}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul className={menuOpen ? "open":""}>
-                <li >
+                <li onClick={()=> {setMenuOpen(!menuOpen)}} >
                     <NavLink to="/">HOME</NavLink>
                 </li>
-                <li >
+                <li onClick={()=> {setMenuOpen(!menuOpen)}} >
                     <NavLink to="/services">SERVICES</NavLink>
                 </li>
-                <li >
+                <li onClick={()=> {setMenuOpen(!menuOpen)}} >
                     <NavLink to="/about">ABOUT US</NavLink>
                 </li>
-                <li >
+                <li onClick={()=> {setMenuOpen(!menuOpen)}} >
                     <NavLink to="/contact">CONTACT US</NavLink>
                 </li>
-                <li >
+                <li onClick={()=> {setMenuOpen(!menuOpen)}} >
                     <NavLink to="/gallary">GALLERY</NavLink>
                 </li>
              </ul>
