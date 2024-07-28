@@ -1,43 +1,64 @@
-import React from 'react';
-import { Media } from '../../../../../assets/Media';
-import { useState } from 'react';
-import './VideoCarousel.css'; // Importing CSS for styling
+import "./VideoCarousel.css";
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import v1 from '../../../../../assets/v1.mp4';
+import v2 from '../../../../../assets/v2.mp4';
+import v3 from '../../../../../assets/v3.mp4';
+import v4 from '../../../../../assets/v4.mp4';
+import ReactPlayer from "react-player";
+//import "bootstrap/dist/css/bootstrap.css";
 
 const VideoCarousel = () => {
-  const [file, setFile] = useState(null);
+  const videoProperties = [
+    {
+      id: 1,
+      title: "Video 1",
+      src: v1,
+      credit: "Video by cottonbro from Pexels",
+    },
+    {
+      id: 2,
+      title: "Video 2",
+      src: v2,
+      credit: "Video by cottonbro from Pexels",
+    },
+    {
+      id: 3,
+      title: "Video 3",
+      src: v3,
+      credit: "Video by cottonbro from Pexels",
+    },
+  ];
 
   return (
-    <div className='container'>
-      {/* <div className='images-container'>
-      
-      </div> */}
-        <p className='thirdComponent'>Video Gallery</p>
-      <div className="images-container">
-        {Media.map((file, index) => (
-          <div
-            className="image"
-            key={index}
-            onClick={() => setFile(file)}
-          >
-            {file.type === 'image' ? (
-              <img src={file.url} alt={`Media ${index}`} />
-            ) : (
-              <video src={`${file.url}#t0.001`} muted preload='metadata' />
-            )}
-          </div>
-        ))}
-        
-        <div className='popup-media' style={{ display: file ? 'block' : 'none' }}>
-          <span className='close-btn' onClick={() => setFile(null)}>&times;</span>
-          {file?.type === 'video' ? (
-            <video src={file?.url} muted autoPlay controls />
-          ) : (
-            <img src={file?.url} alt="Popup" />
-          )}
-        </div>
-      </div>
+    <div className="contact-container">
+    <div className="App">
+       {/* <h1 style={{textAlign:'center'}}>Video Gallery</h1> */}
+       <p className='thirdComponent'>Video Gallery</p>
+       <div className="contact-section">
+      <Carousel>
+        {videoProperties.map((videoObj) => {
+          return (
+            <Carousel.Item key={videoObj.id}>
+              <ReactPlayer
+                url={videoObj.src}
+                pip={true}
+                controls={true}
+                playing={false}
+                className="react-player"
+              />
+              <Carousel.Caption>
+                <h3>{videoObj.title}</h3>
+                <p>{videoObj.credit}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
     </div>
+     </div>
+     </div>
   );
-}
+};
 
-export default VideoCarousel;;
+export default VideoCarousel;

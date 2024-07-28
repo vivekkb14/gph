@@ -1,88 +1,213 @@
-
-/* GlobalMedia.css */
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #333;
+/* Container for the entire carousel */
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
 }
 
-.images-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin: 0;
-}
-
-.image {
-  position: relative;
-  cursor: pointer;
+.contact-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+/* Title styling */
+.thirdComponent {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(156, 124, 85);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Basic carousel styles */
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
   overflow: hidden;
-  transition: transform 0.3s;
 }
 
-.image img,
-.image video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.carousel-item {
+  position: relative;
+  display: none;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  height: 0;  /* Ensure proper height management */
+  padding-top: 56.25%;  /* 16:9 Aspect Ratio */
+}
+
+.carousel-item.active {
   display: block;
+  opacity: 1;
 }
 
-.image:hover {
-  transform: scale(1.05);
-}
-
-.popup-media {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
-}
-
-.popup-media img,
-.popup-media video {
-  max-width: 700px;
-  max-height: 700px;
-  object-fit: contain;
-}
-
-.close-btn {
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  height: 3rem;
+  font-size: 2rem;
+  line-height: 1;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #fff;
-  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  user-select: none;
+  z-index: 10; /* Ensure controls are on top */
 }
 
+.carousel-control-prev {
+  left: 10px; /* Adjust positioning */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjust positioning */
+}
+
+/* Remove default icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+/* Use symbols instead of icons */
+.carousel-control-prev::before {
+  content: '<';
+  color: #fff;
+}
+
+.carousel-control-next::before {
+  content: '>';
+  color: #fff;
+}
+
+/* Adjust symbol size and position */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  display: block;
+  font-size: 2rem; /* Adjust size as needed */
+  line-height: 1; /* Ensure symbols are vertically centered */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); Optional: add shadow for better visibility */
+  padding-left: 6rem;
+  color: darkgray;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ReactPlayer styles */
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Optional: add transitions for better UX */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s ease;
+}
+
+/* Responsive styling */
 @media (max-width: 768px) {
-  .popup-media img,
-  .popup-media video {
-    max-width: 90%;
-    max-height: 90%;
+  .carousel-caption {
+    right: 10%;
+    left: 10%;
+    bottom: 10px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+
+  .thirdComponent {
+    font-size: 1.5rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+    font-size: 1.5rem;
+    height: 2.5rem;
+  }
+
+  .carousel-control-prev::before,
+  .carousel-control-next::before {
+    font-size: 1.5rem;
   }
 }
 
-.thirdComponent {
-  /* justify-content: center; */
-  text-align: center;
-  font-weight: bold;
-  font-size: 300%;
-  color: rgb(156, 124, 85);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  /* align-items: center; */
-  /* padding: 50%; */
-}
