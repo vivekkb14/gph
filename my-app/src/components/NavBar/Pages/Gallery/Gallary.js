@@ -5,10 +5,8 @@ import VideoCarousel from './VideoGallery/VideoCarousel'
 export const Gallary = () => {
   return (
     <>
-    <div><PhotoGallery/></div>
-    <div><VideoCarousel/></div>
-    </>
-    
-    
+      <div><PhotoGallery/></div>
+      <div><VideoCarousel/></div>
+    </>    
   )
 }

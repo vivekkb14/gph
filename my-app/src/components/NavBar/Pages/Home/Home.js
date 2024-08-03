@@ -4,6 +4,7 @@ import impatientCheckImage from '../../../../assets/dog-being-checked-by-vet-pet
 import machinesImage from '../../../../assets/machines.png'
 import stethascpeImage from '../../../../assets/stethascope.png'
 import doctors from '../../../../assets/doctors.png'
+import TestimonialSlider from './Testimonial/Testimonial'
 
 export const Home = () => {
     return (
@@ -12,16 +13,16 @@ export const Home = () => {
                 <p className="home-text">GLOBAL PET HOSPITAL</p>
                 <p className="sub-text">We care about your pet</p>
             </div>
-            <div className='impatient-check'>
+            {/* <div className='impatient-check'>
                 <img src={impatientCheckImage} className='inspection-image'></img>
-                <div>
+                <div className='text-component'>
                     <p className='headTextComponent'>We prioritize the health of your pet.</p>
                     <p className='normalText'>
                         We are available 24/7 for emergency surgeries and we 
                         provide doorstep delivery of medicine and pet food.
                     </p>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <p className='thirdComponent'>The Practice</p>
             </div>
@@ -56,6 +57,7 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
+            <TestimonialSlider/>
         </div>
     )
 }
