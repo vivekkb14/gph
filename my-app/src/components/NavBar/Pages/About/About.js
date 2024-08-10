@@ -18,7 +18,7 @@ export const About = () => {
           <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
-              <p className='headTextComponent'>Dr Ranjith K M</p>
+              <p className='aboutPageHeadTextComponent'>Dr Ranjith K M</p>
               <p className='normalText'>
                 Dr Ranjith earned this Masters in Veterinary at Bangalore
                 Veterinary College. He manages our team and makes sure all our
@@ -29,7 +29,7 @@ export const About = () => {
           <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
-              <p className='headTextComponent'>Dr Bhavana</p>
+              <p className='aboutPageHeadTextComponent'>Dr Bhavana</p>
               <p className='normalText'>
                 Dr Ranjith earned this Masters in Veterinary at Bangalore
                 Veterinary College. He manages our team and makes sure all our
@@ -45,7 +45,7 @@ export const About = () => {
           <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
-              <p className='headTextComponent'>Sanjay H M</p>
+              <p className='aboutPageHeadTextComponent'>Sanjay H M</p>
               <p className='normalText'>
                 Dr Ranjith earned this Masters in Veterinary at Bangalore
                 Veterinary College. He manages our team and makes sure all our
@@ -56,7 +56,7 @@ export const About = () => {
           <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
-              <p className='headTextComponent'>Dr Ranjith K M</p>
+              <p className='aboutPageHeadTextComponent'>Dr Ranjith K M</p>
               <p className='normalText'>
                 Dr Ranjith earned this Masters in Veterinary at Bangalore
                 Veterinary College. He manages our team and makes sure all our
@@ -67,7 +67,7 @@ export const About = () => {
           <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
-              <p className='headTextComponent'>Dr Ranjith K M</p>
+              <p className='aboutPageHeadTextComponent'>Dr Ranjith K M</p>
               <p className='normalText'>
                 Dr Ranjith earned this Masters in Veterinary at Bangalore
                 Veterinary College. He manages our team and makes sure all our

@@ -20,6 +20,20 @@ export const Contact = () => {
             <p>Email: contact@company.com</p>
           </div>
         </div>
+        <div className="grid-item item3">
+          <div className="working-hours">
+            <h1>Timings</h1>
+            <p>Monday - Friday: 8AM–10PM</p>
+            <p>Saturday - Sunday: 8AM–10PM (It may vary)</p>
+            <p>Emergency Service: 24/7</p>
+          </div>
+          <div className="contact-section">
+            <h1 className="whatsapp-title">WhatsApp</h1>
+            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" className="whatsapp-button">
+              <i className="fab fa-whatsapp"></i> Message us on WhatsApp
+            </a>
+          </div>
+        </div>
         <div className="grid-item item2">
           <h2 className="location-title">Location</h2>
           <iframe
@@ -29,20 +43,6 @@ export const Contact = () => {
             aria-hidden="false"
             tabIndex="0"
           />
-        </div>
-        <div className="grid-item item3">
-          <div className="working-hours">
-            <h2>Timings</h2>
-            <p>Monday - Friday: 8AM–10PM</p>
-            <p>Saturday - Sunday: 8AM–10PM (It may vary)</p>
-            <p>Emergency Service: 24/7</p>
-          </div>
-          <div className="contact-section">
-            <h1 className="whatsapp-title">WhatsApp</h1>
-            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} className="whatsapp-button">
-              <i className="fab fa-whatsapp"></i> Message us on WhatsApp
-            </a>
-          </div>
         </div>
       </div>
     </div>
