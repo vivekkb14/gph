@@ -1,0 +1,126 @@
+/* Base Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    text-align: -webkit-center; /* Center content horizontally */
+    background: #000; /* Ensure background is black for the video area */
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoHeading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    color: rgb(156, 109, 51);
+    padding: 0.5rem;
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: -webkit-center; /* Center text within container */
+}
+
+.heading-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.video-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    width: 100%; /* Set to 100% to ensure responsiveness */
+    max-width: 1250px; /* Limit maximum width for larger screens */
+    text-align: -webkit-center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .videoHeading {
+        font-size: 300%;
+    }
+
+    .video-container {
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .heading-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .videoHeading {
+        font-size: 300%;
+    }
+
+    .video-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .heading-container {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .video-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .videoHeading {
+        font-size: 300%;
+    }
+
+    .video-container {
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .heading-container {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    }
+
+    .video-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .videoHeading {
+        font-size: 300%;
+    }
+
+    .video-container {
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .heading-container {
+        grid-template-columns: 1fr;
+    }
+
+    .video-section {
+        padding: 5px;
+    }
+}
