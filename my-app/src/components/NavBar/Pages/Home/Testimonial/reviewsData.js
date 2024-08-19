@@ -1,37 +1,27 @@
 export const reviews = [
     {
         id: 1,
-        image:
-            'https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'John Doe',
-        text: 'I was extremely pleased with the quality of the product. It exceeded my expectations and provided great value for the price.',
+        name: 'Madhu Sudhan',
+        text: 'One of the best hospital in sarjapur. My dog 14 year old had a tumor which was not healing and low blood count. Other doctors refused to go for the surgery, dr. ranjith gave a proper medication to reduce the size of the tumor and then operated. I would recommend pet parents to visit Global pet hospital, very genuine service. Tqs a lot',
     },
     {
         id: 2,
-        image:
-            'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Jane Smith',
-        text: 'The customer service was excellent. They were responsive and helpful throughout the entire process, making it a smooth experience for me.',
+        name: 'Arfaa M',
+        text: 'I\'d wholeheartedly suggest this vet to everyone who stays in that area. He really knew what he was doing when my dog had a fall and broke her nails. The vet was calm and extremely careful during the treatment which even my dog loved, and honestly, compared to other vets I\'ve been to before, this one is by far the best. They handled my shih tzu very well, she didn’t feel any pain when they were treating her which is a priority for any pet parent. Thanks to the Vet and the clinic for taking good care of my dog. I will definitely recommend this clinic to anyone and everyone with a pet. 🐾🐶😇 ',
     },
     {
         id: 3,
-        image:
-            'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Alex Johnson',
-        text: 'The attention to detail in their work is impressive. Every aspect of the project was handled with precision and care. I highly recommend their services.',
+        name: 'Abhiram G',
+        text: 'Dr Ranjith is amazing. Went for a general check up for my cat. The way he handled my cat was really good as my cat is really aggressive. Did a routine blood check up and got the results within 15 mins as they have in house lab facility as well. Overall experience was really good. Thank you doctor. Will surely recommend everyone to take your pets there.!',
     },
     {
         id: 4,
-        image:
-            'https://plus.unsplash.com/premium_photo-1671823917954-dc943c1bd9df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Emily Davis',
-        text: 'The team demonstrated a deep understanding of my requirements. They were able to capture the essence of my vision and deliver a product that exceeded my expectations.',
+        name: 'Manu Cat',
+        text: '"DR BHAVANA" Madam Thank You For Being An Amazing Doctor. Your Care And Support Mean A Lot. Thank You Madam.',
     },
     {
         id: 5,
-        image:
-            'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'David Miller',
-        text: "The product not only met but exceeded my expectations. It's clear that the team is dedicated to delivering high-quality work. I'm a satisfied customer.",
+        name: 'Madhumitha S',
+        text: "The best ever pet clinic..I met ... In Bangalore... The doctor are very well trained and experienced... And even the staff are very kind and polite ... And the places are very neat and tidy... You must  definitely visit here ...",
     },
 ];

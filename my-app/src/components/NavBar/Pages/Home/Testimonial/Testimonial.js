@@ -25,7 +25,7 @@ const Testimonials = () => {
                     {
                         reviews.map((review) => (
                             <SplideSlide key={review.id}>
-                                <image src={review.image} className="review-img" alt="" />
+                                {/* <image src={review.image} className="review-img" alt="" /> */}
                                 <div className="content">
                                     <p className="text">{review.text}</p>
                                     <div className="info">
