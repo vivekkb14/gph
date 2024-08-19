@@ -19,10 +19,11 @@ body {
   }
   
   .contact-title {
-    font-size: 36px;
+    font-size: 250%;
     margin-bottom: 20px;
     color: #333;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    /* color: rgb(156, 124, 85); */
+    background: linear-gradient(45deg, rgb(156, 124, 85),rgb(156, 124, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-family: 'Montserrat', sans-serif; */
@@ -56,9 +57,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .working-hours h2 {
-    font-size: 24px;
-    color: #333;
+  .working-hours h1 {
+    font-size: 250%;
+    /* color: #333; */
+    color: rgb(156, 124, 85);
     margin-bottom: 10px;
   }
   
@@ -101,10 +103,10 @@ body {
   }
   
   .location-title {
-    font-size: 28px;
+    font-size: 250%;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: rgb(156, 124, 85);
   }
   
   .map-frame {

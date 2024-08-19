@@ -1,8 +1,9 @@
 import React from "react";
-import Reviews, { reviews } from "./reviewsData"
+import { reviews } from "./reviewsData"
 import {Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
-import "./Testimonial.css"
+import "./Testimonial.css";
+import Quote from "../../../../../assets/BlockQuote.svg"
 
 const Testimonials = () => {
     return (
@@ -12,19 +13,19 @@ const Testimonials = () => {
                     Testimonials!!
                 </h1>
                 <p>
-                    What are our members saying!
+                    What are our clients saying!
                 </p>
             </div>
             <div className="slider-container">
-                {/* <blockquote>
+                <blockquote>
                     <img src={Quote} className="quote top-quote" alt=""></img>
                     <img src={Quote} className="quote bottom-quote" alt=""></img>
-                </blockquote> */}
+                </blockquote>
                 <Splide options={{perPage : 1, type:'loop', speed: 2000, autoplay: true}}>
                     {
                         reviews.map((review) => (
                             <SplideSlide key={review.id}>
-                                <image src={review.image} className="review-img" alt="" />
+                                {/* <image src={review.image} className="review-img" alt="" /> */}
                                 <div className="content">
                                     <p className="text">{review.text}</p>
                                     <div className="info">

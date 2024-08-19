@@ -10,8 +10,12 @@ nav {
     z-index: 1000;
 }
 
+nav a {
+    cursor: inherit;
+}
+
 nav ul {
-    position:relative;
+    position: relative;
     display: flex;
     width: 200%;
     margin-left: auto;
@@ -20,8 +24,8 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 10px 20px;
-    font-size: 18px; 
-    list-style: none; 
+    font-size: 18px;
+    list-style: none;
 }
 
 nav ul li a {
@@ -38,9 +42,9 @@ nav ul li a:not(.active):hover {
 }
 
 .gph-logo {
-    width: 8%;
+    width: 12%;
     cursor: pointer;
-    height: 7%;
+    height: 4%;
     overflow: 'hidden';
     border-radius: 15%;
 }
@@ -86,25 +90,45 @@ nav .menu span {
 @media (max-width: 480px) {
     nav .menu {
         display: flex;
+        margin: 3%;
     }
+
     nav {
         flex-direction: column;
         align-items: start;
     }
+
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
     }
+
     nav ul.open {
         display: flex;
     }
+
     nav ul li {
         width: 100%;
         text-align: center;
     }
+
     nav ul li a {
         margin: 0.25rem 0.5rem;
     }
+
+    .gph-logo {
+        width: 12%;
+        cursor: pointer;
+        height: 7%;
+        overflow: 'hidden';
+        border-radius: 15%;
+        margin-left: 2%;
+    }
+
+    .active {
+        background-color: #161616;
+    }
+    
 }

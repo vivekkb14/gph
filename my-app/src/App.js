@@ -5,6 +5,7 @@ import {Gallary, Contact, About, Services} from "./components/NavBar/Pages";
 //import Services from "./components/NavBar/Pages/Services/Services";
 import Footer from "./components/Footer/Footer"
 import Home from "./components/NavBar/Pages/Home/Home"
+// import './fonts/index.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
