@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import pic from '../../../../assets/Doctor1.webp';
+import pic from '../../../../assets/About-us/Doctor1.webp';
 import './About.css';
 
 export const About = () => {

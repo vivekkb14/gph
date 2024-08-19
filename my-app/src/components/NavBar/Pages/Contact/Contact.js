@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 // import whatsappsvg from "../../../../assets/whatsapp-svgrepo-com.svg"
-import whatsappsvg from "../../../../assets/whatsapp.png"
+// import whatsappsvg from "../../../../assets/whatsapp.png"
 
 export const Contact = () => {
   const phoneNumber = '919663773610'; // Replace with the actual phone number

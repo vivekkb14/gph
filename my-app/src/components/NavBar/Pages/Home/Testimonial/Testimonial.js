@@ -3,7 +3,7 @@ import { reviews } from "./reviewsData"
 import {Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import "./Testimonial.css";
-import Quote from "../../../../../assets/BlockQuote.svg"
+import Quote from "../../../../../assets/Common/BlockQuote.svg"
 
 const Testimonials = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Home.css"
-import impatientCheckImage from '../../../../assets/dog-being-checked-by-vet-pet-shop.jpg'
-import machinesImage from '../../../../assets/machines.png'
-import stethascpeImage from '../../../../assets/stethascope.png'
-import doctors from '../../../../assets/doctors.png'
+// import impatientCheckImage from '../../../../assets/dog-being-checked-by-vet-pet-shop.jpg'
+import machinesImage from '../../../../assets/Home/machines.png'
+import stethascpeImage from '../../../../assets/Home/stethascope.png'
+import doctors from '../../../../assets/Home/doctors.png'
 import TestimonialSlider from './Testimonial/Testimonial'
 
 export const Home = () => {

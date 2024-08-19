@@ -1,10 +1,10 @@
 import "./VideoCarousel.css";
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import v1 from '../../../../../assets/v1.mp4';
-import v2 from '../../../../../assets/v2.mp4';
-import v3 from '../../../../../assets/v3.mp4';
-import v4 from '../../../../../assets/v4.mp4';
+import v1 from '../../../../../assets/video/v1.mp4';
+import v2 from '../../../../../assets/video/v2.mp4';
+import v3 from '../../../../../assets/video/v3.mp4';
+import v4 from '../../../../../assets/video/v4.mp4';
 import ReactPlayer from "react-player";
 //import "bootstrap/dist/css/bootstrap.css";
 

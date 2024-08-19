@@ -6,13 +6,13 @@ import { Captions, Download, Fullscreen, Thumbnails, Zoom } from 'yet-another-re
 import Photos from './Photos';
 import './PhotoGallery.css';
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import pic1 from '../../../../../assets/pic1.jpg';
-import pic2 from '../../../../../assets/pic2.webp';
-import pic3 from '../../../../../assets/pic3.webp';
-import pic4 from '../../../../../assets/pic4.webp';
-import pic5 from '../../../../../assets/pic5.webp';
-import pic6 from '../../../../../assets/pic6.webp';
-import pic7 from '../../../../../assets/pic7.webp';
+import pic1 from '../../../../../assets/Gallery/Photos/pic1.jpg';
+import pic2 from '../../../../../assets/Gallery/Photos/pic2.webp';
+import pic3 from '../../../../../assets/Gallery/Photos/pic3.webp';
+import pic4 from '../../../../../assets/Gallery/Photos/pic4.webp';
+import pic5 from '../../../../../assets/Gallery/Photos/pic5.webp';
+import pic6 from '../../../../../assets/Gallery/Photos/pic6.webp';
+import pic7 from '../../../../../assets/Gallery/Photos/pic7.webp';
 
 const PhotoGallery = () => {
   const [index, setIndex] = useState(-1);
