@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import video from './../../../../../assets/video/v2.mp4'
-import './Video.css'
+import video from './../../../../../assets/Gallery/Videos/v2.mp4'
+import './VideoPlayer.css'
 
 const VideoPlayer = () => {
-  // URL of the video you want to play
-  const videoUrl = {video}; // Replace with your video URL
-
   return (
     <div className="video-container">
     <div className='heading-container'>
