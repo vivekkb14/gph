@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.css';
 // import whatsappsvg from "../../../../assets/whatsapp-svgrepo-com.svg"
 // import whatsappsvg from "../../../../assets/whatsapp.png"
+import whatsapp from "../../../../assets/Contact-us/whatsapp-white-logo-svgrepo-com.svg"
 
 export const Contact = () => {
   const phoneNumber = '919663773610'; // Replace with the actual phone number
@@ -28,14 +29,13 @@ export const Contact = () => {
             <p>Monday - Friday: 8AM–10PM</p>
             <p>Saturday - Sunday: 8AM–10PM (It may vary)</p>
             <p>Emergency Service: 24/7</p>
-          </div>
-          <div className="contact-section">
-            <h1 className="whatsapp-title">WhatsApp</h1>
-            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" className="whatsapp-button">
-              {/* <img src={whatsappsvg} className='whatsapp-icon'></img> */}
-            <p >Message us on WhatsApp</p>
+            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank">
+              <img src={whatsapp} className='whatsapp-icon'></img>
+              {/* <p >Message us on WhatsApp</p> */}
+              {/* <h1 className="whatsapp-title">Message us on WhatsApp</h1> */}
             </a>
           </div>
+
         </div>
         <div className="grid-item item2">
           <h2 className="location-title">Location</h2>
