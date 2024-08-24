@@ -26,7 +26,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className='middleComponent'>
+          {/* <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
               <p className='aboutPageHeadTextComponent'>Dr Bhavana</p>
@@ -36,7 +36,7 @@ export const About = () => {
                 backgrounds work together to help support our organisation.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       }
       {nonMedicalStaff &&
@@ -53,7 +53,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className='middleComponent'>
+          {/* <div className='middleComponent'>
             <img src={pic} className='inspection-image'></img>
             <div className='texts'>
               <p className='aboutPageHeadTextComponent'>Dr Ranjith K M</p>
@@ -74,7 +74,7 @@ export const About = () => {
                 backgrounds work together to help support our organisation.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       }
     </div>
