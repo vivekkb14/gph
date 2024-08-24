@@ -107,11 +107,12 @@
   color: grey;
 } */
 
-.thirdComponent {
+.thirdPhotoGallaryComponent {
   text-align: center;
   font-weight: bold;
-  font-size: 250%;
-  color: rgb(156, 124, 85);
+  font-size: 300%;
+  color: rgb(156, 109, 51);
+  padding: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -120,6 +121,8 @@
     overflow-x: auto;
     gap: 1rem;
     padding: 0.2rem;
+    text-align: center;
+    justify-content: center;
   }
 
   .image {

@@ -61,7 +61,7 @@ const PhotoGallery = () => {
     <>
      <div className="contact-container">
       <div className='images-container'>
-        <p className='thirdComponent'>Photo Gallery</p>
+        <p className='thirdPhotoGallaryComponent'>Photo Gallery</p>
       </div>
       <div className="contact-section">
       <Photos data={slides} onClick={(currentIndex) => { setIndex(currentIndex); }} />

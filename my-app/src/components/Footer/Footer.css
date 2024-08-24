@@ -8,6 +8,13 @@
     text-align: center;
     padding: 15px 8%;
     justify-content: space-between;
+    margin-top: 0;
+    /* take available whitespace */
+    margin-bottom: -10px;
+    /* remove bottom whitespace */
+    padding-bottom: 5px;
+    height: 100px;
+    /* calc height when limited content */
     /* display:grid */
 }
 
