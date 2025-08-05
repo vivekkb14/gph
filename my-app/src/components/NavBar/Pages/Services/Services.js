@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import WhatsAppChat from "../CommonComponents/WhatsappComponent/WhatsappComponent";
 
 const servicesData = [
   {
@@ -66,6 +67,7 @@ export const Services = () => {
           />
         ))}
       </div>
+      <div><WhatsAppChat/></div>
     </div>
   );
 };

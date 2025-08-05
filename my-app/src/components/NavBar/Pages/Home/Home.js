@@ -5,6 +5,7 @@ import machinesImage from '../../../../assets/Home/machines.png'
 import stethascpeImage from '../../../../assets/Home/stethascope.png'
 import doctors from '../../../../assets/Home/doctors.png'
 import TestimonialSlider from './Testimonial/Testimonial'
+import WhatsAppChat from '../CommonComponents/WhatsappComponent/WhatsappComponent'
 
 export const Home = () => {
     return (
@@ -58,6 +59,7 @@ export const Home = () => {
                 </div>
             </div>
             <TestimonialSlider/>
+            <WhatsAppChat/>
         </div>
     )
 }

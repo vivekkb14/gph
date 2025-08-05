@@ -3,6 +3,7 @@ import './Contact.css';
 // import whatsappsvg from "../../../../assets/whatsapp-svgrepo-com.svg"
 // import whatsappsvg from "../../../../assets/whatsapp.png"
 import whatsapp from "../../../../assets/Contact-us/whatsapp-white-logo-svgrepo-com.svg"
+import WhatsAppChat from '../CommonComponents/WhatsappComponent/WhatsappComponent'
 
 export const Contact = () => {
   const phoneNumber = '919663773610'; // Replace with the actual phone number
@@ -20,7 +21,7 @@ export const Contact = () => {
             <p>opposite to D mart, vinayaka nagar, Sarjapura,</p>
             <p>Bengaluru, Karnataka, India</p>
             <p>Phone: +91 9663773610</p>
-            <p>Email: contact@company.com</p>
+            <p>Email: globalpethospitalsarjapura@gmail.com</p>
           </div>
         </div>
         <div className="grid-item item3">
@@ -29,11 +30,11 @@ export const Contact = () => {
             <p>Monday - Friday: 8AM–10PM</p>
             <p>Saturday - Sunday: 8AM–10PM (It may vary)</p>
             <p>Emergency Service: 24/7</p>
-            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank">
+            {/* <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank">
               <img src={whatsapp} className='whatsapp-icon'></img>
-              {/* <p >Message us on WhatsApp</p> */}
-              {/* <h1 className="whatsapp-title">Message us on WhatsApp</h1> */}
-            </a>
+              <p >Message us on WhatsApp</p>
+              <h1 className="whatsapp-title">Message us on WhatsApp</h1>
+            </a> */}
           </div>
 
         </div>
@@ -47,6 +48,7 @@ export const Contact = () => {
             tabIndex="0"
           />
         </div>
+        <div><WhatsAppChat/></div>
       </div>
     </div>
 
