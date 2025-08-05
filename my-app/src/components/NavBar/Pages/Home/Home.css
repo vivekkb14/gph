@@ -1,7 +1,7 @@
 .home-component {
-    background: url(../../../../assets/Home/updated_gph.png);
+    background: url(../../../../assets/Home/front-page-view.jpg);
     height: 100%;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15%;
@@ -11,6 +11,8 @@
     align-items: center;
     margin-left: 5%;
     margin-top: 2%;
+    padding-left: 5%;
+    text-align: left;
 }
 
 .root-componenet {
@@ -157,5 +159,8 @@
 
     .home-component {
         padding: 10%;
+        background-position: center;
+        /* padding-left: 50%; */
+        text-align: center;    
     }
 }
