@@ -1,0 +1,71 @@
+/* components/WhatsAppChat.css */
+.whatsapp-container {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  background-color: #25d366;
+  color: white;
+  padding: 20px 35px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-container:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.whatsapp-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-container {
+    padding: 14px 25px;
+    bottom: 30px;
+    right: 28px;
+    width: 150px;
+    justify-content: center;
+  }
+  .whatsapp-text {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .whatsapp-icon {
+    width: 20%;
+    height: 20%;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .whatsapp-container {
+    padding: 10px 14px;
+    bottom: 30px;
+    right: 28px;
+  }
+  .whatsapp-icon {
+    width: 30%;
+    /* height: 20%; */
+  }
+}
+
+@media (min-width: 769px) {
+  .whatsapp-container {
+    padding: 20px 35px;
+    bottom: 60px;
+    right: 50px;
+  }
+}
