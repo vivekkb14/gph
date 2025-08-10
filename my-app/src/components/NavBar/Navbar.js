@@ -25,6 +25,9 @@ const NavBar = () => {
                     <NavLink to="/services">SERVICES</NavLink>
                 </li>
                 <li onClick={() => { setMenuOpen(!menuOpen) }} >
+                    <NavLink to="/products">PRODUCTS</NavLink>
+                </li>
+                <li onClick={() => { setMenuOpen(!menuOpen) }} >
                     <NavLink to="/about">ABOUT US</NavLink>
                 </li>
                 <li onClick={() => { setMenuOpen(!menuOpen) }} >

@@ -1,0 +1,432 @@
+/* Tooltip Overlay */
+.tooltip-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Product Tooltip */
+.product-tooltip {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 10000;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10001;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn:hover {
+    background: #dc3545;
+    color: white;
+    transform: scale(1.1);
+}
+
+.close-btn svg {
+    font-size: 1.2rem;
+}
+
+/* Tooltip Content */
+.tooltip-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 400px;
+}
+
+.tooltip-image-section {
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+}
+
+.tooltip-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.tooltip-prescription-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(220, 53, 69, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.tooltip-prescription-badge svg {
+    font-size: 0.9rem;
+}
+
+/* Tooltip Info */
+.tooltip-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tooltip-header {
+    margin-bottom: 10px;
+}
+
+.tooltip-product-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.tooltip-brand {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Rating */
+.tooltip-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.star {
+    font-size: 1.1rem;
+    color: #dee2e6;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Description */
+.tooltip-description {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Details */
+.tooltip-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #495057;
+    line-height: 1.4;
+}
+
+.detail-item svg {
+    font-size: 1rem;
+    color: #0d6efd;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.detail-item strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Price Section */
+.tooltip-price-section {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.original-price-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.original-price {
+    font-size: 1rem;
+    color: #6c757d;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.discount-amount {
+    font-size: 0.85rem;
+    color: #198754;
+    font-weight: 600;
+    background: rgba(25, 135, 84, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+/* Actions */
+.tooltip-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-btn {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #0b5ed7 0%, #0a58ca 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tooltip-overlay {
+        padding: 10px;
+    }
+
+    .product-tooltip {
+        max-height: 95vh;
+        border-radius: 15px;
+    }
+
+    .tooltip-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .tooltip-image-section {
+        border-radius: 15px 15px 0 0;
+        height: 250px;
+    }
+
+    .tooltip-image {
+        min-height: 250px;
+    }
+
+    .tooltip-info {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .tooltip-product-name {
+        font-size: 1.5rem;
+    }
+
+    .tooltip-details {
+        gap: 10px;
+    }
+
+    .detail-item {
+        font-size: 0.85rem;
+    }
+
+    .current-price {
+        font-size: 1.6rem;
+    }
+
+    .tooltip-actions {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tooltip-overlay {
+        padding: 5px;
+    }
+
+    .product-tooltip {
+        border-radius: 12px;
+    }
+
+    .tooltip-image-section {
+        height: 200px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .tooltip-image {
+        min-height: 200px;
+    }
+
+    .tooltip-info {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .tooltip-product-name {
+        font-size: 1.3rem;
+    }
+
+    .tooltip-brand {
+        font-size: 0.9rem;
+    }
+
+    .tooltip-description {
+        font-size: 0.9rem;
+    }
+
+    .detail-item {
+        font-size: 0.8rem;
+    }
+
+    .current-price {
+        font-size: 1.4rem;
+    }
+
+    .contact-btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .close-btn {
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .close-btn svg {
+        font-size: 1rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .product-tooltip,
+    .close-btn,
+    .contact-btn {
+        transition: none;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+.close-btn:focus,
+.contact-btn:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .product-tooltip {
+        border: 2px solid #000;
+    }
+
+    .tooltip-prescription-badge {
+        background: #dc3545;
+        color: #fff;
+    }
+
+    .contact-btn {
+        background: #000;
+        color: #fff;
+    }
+
+    .close-btn {
+        background: #fff;
+        color: #000;
+        border: 2px solid #000;
+    }
+}
+
+/* Print styles */
+@media print {
+    .tooltip-overlay {
+        position: static;
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .product-tooltip {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+} 

@@ -5,6 +5,7 @@ import {Gallary, Contact, About, Services} from "./components/NavBar/Pages";
 //import Services from "./components/NavBar/Pages/Services/Services";
 import Footer from "./components/Footer/Footer"
 import Home from "./components/NavBar/Pages/Home/Home"
+import Products from "./components/NavBar/Pages/Products/Products"
 // import './fonts/index.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/gallary" element={<Gallary/>}></Route>
           <Route path="/services" element={<Services/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/products" element={<Products/>}></Route>
           <Route path="/" element={<Home/>}></Route>
         </Routes>
         <Footer/>
