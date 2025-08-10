@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiPackage, FiTag, FiInfo, FiStar } from 'react-icons/fi';
 import './ProductTooltip.css';
 
-const ProductTooltip = ({ product, position, onClose }) => {
+const ProductTooltip = ({ product, onClose }) => {
     const formatPrice = (price) => {
         return new Intl.NumberFormat('en-IN', {
             style: 'currency',
@@ -51,18 +51,17 @@ const ProductTooltip = ({ product, position, onClose }) => {
                     initial={{ 
                         opacity: 0, 
                         scale: 0.8,
-                        x: position.x - 200,
-                        y: position.y - 100
+                        y: 50
                     }}
                     animate={{ 
                         opacity: 1, 
                         scale: 1,
-                        x: position.x - 200,
-                        y: position.y - 100
+                        y: 0
                     }}
                     exit={{ 
                         opacity: 0, 
-                        scale: 0.8 
+                        scale: 0.8,
+                        y: 50
                     }}
                     transition={{ 
                         duration: 0.3,

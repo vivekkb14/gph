@@ -25,6 +25,7 @@
     max-height: 90vh;
     overflow-y: auto;
     z-index: 10000;
+    margin: auto;
 }
 
 /* Close Button */
@@ -263,6 +264,7 @@
     .product-tooltip {
         max-height: 95vh;
         border-radius: 15px;
+        margin: 10px;
     }
 
     .tooltip-content {
@@ -317,6 +319,8 @@
 
     .product-tooltip {
         border-radius: 12px;
+        margin: 5px;
+        max-height: 98vh;
     }
 
     .tooltip-image-section {

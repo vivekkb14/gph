@@ -13,10 +13,14 @@ const ProductCard = ({ product, onClick }) => {
         }).format(price);
     };
 
+    const handleClick = () => {
+        onClick();
+    };
+
     return (
         <motion.div 
             className="product-card"
-            onClick={onClick}
+            onClick={handleClick}
             whileHover={{ 
                 y: -5,
                 boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)"

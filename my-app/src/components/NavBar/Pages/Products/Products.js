@@ -17,7 +17,6 @@ const Products = () => {
     const [viewMode, setViewMode] = useState('grid');
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedProduct, setSelectedProduct] = useState(null);
-    const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [showTooltip, setShowTooltip] = useState(false);
 
     const productsPerPage = 12;
@@ -86,19 +85,18 @@ const Products = () => {
     }, [searchTerm, selectedCategory, selectedBrand, priceRange, prescriptionNeeded, sortBy]);
 
     // Handle product click for tooltip
-    const handleProductClick = (product, event) => {
-        const rect = event.currentTarget.getBoundingClientRect();
-        setTooltipPosition({
-            x: rect.left + rect.width / 2,
-            y: rect.top - 10
-        });
+    const handleProductClick = (product) => {
         setSelectedProduct(product);
         setShowTooltip(true);
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
     };
 
     const handleCloseTooltip = () => {
         setShowTooltip(false);
         setSelectedProduct(null);
+        // Restore body scroll
+        document.body.style.overflow = 'unset';
     };
 
     return (
@@ -252,7 +250,7 @@ const Products = () => {
                     >
                         <ProductCard
                             product={product}
-                            onClick={(e) => handleProductClick(product, e)}
+                            onClick={() => handleProductClick(product)}
                         />
                     </motion.div>
                 ))}
@@ -296,7 +294,6 @@ const Products = () => {
             {showTooltip && selectedProduct && (
                 <ProductTooltip
                     product={selectedProduct}
-                    position={tooltipPosition}
                     onClose={handleCloseTooltip}
                 />
             )}
