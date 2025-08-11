@@ -1,77 +1,69 @@
 .home-component {
     background: url(../../../../assets/Home/front-page-view.jpg);
-    height: 100vh;
-    background-position: center;
+    height: 100%;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15%;
     opacity: 0.8;
     justify-content: center;
-    max-width: 100%;
+    max-width: 90%;
     align-items: center;
-    margin: 0;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-left: 5%;
     text-align: left;
-    display: flex;
-    flex-direction: column;
 }
 
 .root-componenet {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
+    height: 100%;
     justify-content: center;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .home-text {
     font-size: 60px;
     font-weight: bolder;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
 }
 
 .sub-text {
     color: #fff;
     font-size: 30px;
     padding: 15px;
+    overflow: 'hidden';
     margin-top: 1%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .inspection-image {
-    margin: 5% auto;
+    margin-left: 5%;
+    margin-top: 5%;
     border: 10px;
-    max-width: 90%;
-    height: auto;
+    margin-bottom: 5%;
 }
 
 .impatient-check {
     display: flex;
     padding: 1rem;
-    flex-basis: 0;
-    align-items: center;
-    gap: 2rem;
+    flex-basis: 0
 }
 
 .text-component {
     justify-content: center;
-    flex: 1;
 }
 
 .headTextComponent {
     font-size: 32px;
     font-weight: bold;
     align-items: flex-start;
-    padding: 0;
+    padding: 0%;
     margin-left: 10%;
 }
 
 .normalText {
-    padding: 0;
+    padding: 0%;
     margin-left: 20%;
-    line-height: 1.6;
 }
 
 .thirdComponent {
@@ -88,178 +80,87 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 5%;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 0 2rem;
 }
 
 .imageComponent {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    height: auto;
+    width: 200%;
+    height: 100%;
     border-radius: 10%;
     margin-top: 3%;
-    padding: 1rem;
 }
 
 .imageComponent img {
     border-radius: 50%;
-    width: 100%;
-    height: auto;
-    max-width: 200px;
 }
 
 .mainText {
     font-size: 150%;
-    margin: 1rem 0;
 }
 
 .paragraph {
     font-size: 100%;
-    margin: 5% 10%;
-    line-height: 1.6;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
 }
 
-/* Tablet Styles */
-@media (max-width: 768px) {
-    .home-text {
-        font-size: 48px;
-    }
-
-    .sub-text {
-        font-size: 24px;
-    }
-
-    .thirdComponent {
-        font-size: 250%;
-    }
-
+@media (max-width: 480px) {
     .fourthComponent {
-        flex-direction: column;
-        align-items: center;
+        display: inline;
     }
 
-    .imageComponent {
-        min-width: 250px;
-        max-width: 350px;
+    .root-componenet {
+        position: relative;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .impatient-check {
+        display: inline;
+        padding: 1rem;
     }
 
     .headTextComponent {
-        font-size: 28px;
-    }
-}
-
-/* Mobile Styles */
-@media (max-width: 480px) {
-    .home-component {
+        margin-top: 0%;
+        margin-left: 0%;
         padding: 10%;
-        background-position: center;
-        text-align: center;
-        height: 80vh;
+        font-weight: bold;
+        font-size: 20px;
     }
 
-    .home-text {
-        font-size: 36px;
-        margin-bottom: 15px;
+    .normalText {
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    .sub-text {
-        font-size: 18px;
-        padding: 10px;
-    }
 
-    .thirdComponent {
-        font-size: 200%;
-        margin-top: 3%;
+    .inspection-image {
+        margin-left: 0%;
+        margin-top: 5%;
+        border: 0px;
+        width: 80%;
+        margin-bottom: 5%;
     }
 
     .fourthComponent {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-bottom: 3%;
-        padding: 0 1rem;
-        gap: 1rem;
+        display: inline;
+        height: 100%;
+        margin-bottom: 5%;
     }
 
     .imageComponent {
         width: 100%;
-        max-width: 300px;
-        height: auto;
+        height: 100%;
         border-radius: 10%;
-        margin-top: 2%;
-        padding: 0.5rem;
+        margin-top: 3%;
     }
 
-    .imageComponent img {
-        max-width: 150px;
-    }
-
-    .mainText {
-        font-size: 120%;
-        margin: 0.5rem 0;
-    }
-
-    .paragraph {
-        font-size: 90%;
-        margin: 3% 5%;
-        line-height: 1.5;
-    }
-
-    .impatient-check {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .headTextComponent {
-        margin-top: 0;
-        margin-left: 0;
-        padding: 5%;
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .normalText {
-        margin: 0 5%;
-        text-align: center;
-        line-height: 1.5;
-    }
-
-    .inspection-image {
-        margin: 3% auto;
-        border: 0;
-        width: 90%;
-        max-width: 300px;
-    }
-}
-
-/* Small Mobile Styles */
-@media (max-width: 360px) {
-    .home-text {
-        font-size: 28px;
-    }
-
-    .sub-text {
-        font-size: 16px;
-    }
-
-    .thirdComponent {
-        font-size: 180%;
-    }
-
-    .imageComponent {
-        max-width: 250px;
-    }
-
-    .mainText {
-        font-size: 110%;
-    }
-
-    .paragraph {
-        font-size: 85%;
+    .home-component {
+        padding: 10%;
+        background-position: center;
+        /* padding-left: 50%; */
+        text-align: center;    
     }
 }

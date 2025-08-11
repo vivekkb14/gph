@@ -6,7 +6,7 @@ const servicesData = [
   {
     title: 'Vaccinations',
     description: 'Routine vaccinations are one of the best ways to protect the health of your pet. We use only well-tested combinations of vaccines to protect against the most serious diseases in our area. Each pet is evaluated for the appropriate vaccinations needed. After the routine puppy and kitten series of vaccinations and the one-year booster shots, we recommend vaccinating for distemper virus and parvovirus for dogs and panleukopenia and upper respiratory viruses for cats every three years.',
-    imageUrl: 'https://www.kindnessoftulsa.com/wp-content/uploads/2018/01/dog_vaccination-930x546.jpg'
+    imageUrl: 'https://supertails.com/cdn/shop/articles/dog-vaccination-cover-img-1698735072252_1200x.webp?v=1698735557'
   },
   {
     title: 'Ultrasound',
@@ -31,7 +31,7 @@ const servicesData = [
   {
     title: 'Pharmacy',
     description: 'We maintain an inventory of pharmaceuticals, supplements, shampoos, heartworm preventatives and parasite treatments to meet the needs of your pet. They have all been carefully selected by our Doctors. We will be happy to mail them to you at no additional charge!.',
-    imageUrl: 'https://www.tnah.ca/wp-content/uploads/2022/11/vet-selecting-medications-from-shelf-in-veterinary-pharmacy-159615208-57554c6c5f9b5892e86d8bed.jpg'
+    imageUrl: 'https://www.loyalpetzone.com/wp-content/uploads/2017/07/Nobivac-dhppil-dog-vaccine.jpg'
   },
   {
     title: 'Rhinoscopy',

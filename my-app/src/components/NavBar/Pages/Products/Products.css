@@ -1,6 +1,7 @@
 /* Products Page Styles */
 .products-container {
-    max-width: 1200px;
+    width: 90%;
+    /*max-width: 90%;*/
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
@@ -12,7 +13,7 @@
     text-align: center;
     margin-bottom: 40px;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    /* background: linear-gradient(135deg, #acb2bb 0%, #0b5ed7 100%); */
     color: white;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(13, 110, 253, 0.15);
@@ -284,6 +285,8 @@
     .filter-group input,
     .search-input {
         font-size: 16px; /* Prevents zoom on iOS */
+        display: flex;
+      flex-direction: column;
     }
 
     .products-grid.grid {

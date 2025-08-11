@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { FiSearch, FiGrid, FiList } from 'react-icons/fi';
 import ProductCard from './ProductCard/ProductCard';
 import ProductTooltip from './ProductTooltip/ProductTooltip';
@@ -103,7 +103,7 @@ const Products = () => {
         <div className="products-container">
             {/* Header */}
             <motion.div 
-                className="products-header"
+                className="products-header" style={{color: 'rgb(156, 109, 51)'}}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
