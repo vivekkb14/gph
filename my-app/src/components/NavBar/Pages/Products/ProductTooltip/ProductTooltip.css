@@ -209,7 +209,7 @@
 
 .original-price {
     font-size: 1rem;
-    color: #6c757d;
+    color: rgb(156, 109, 51);
     text-decoration: line-through;
     font-weight: 400;
 }
@@ -226,7 +226,7 @@
 .current-price {
     font-size: 2rem;
     font-weight: 700;
-    color: #0d6efd;
+    color: rgb(156, 109, 51);
 }
 
 /* Actions */
@@ -236,9 +236,9 @@
 }
 
 .contact-btn {
-    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
-    color: white;
-    border: none;
+    background: white;
+    color: rgb(156, 109, 51);
+    border: 2px solid rgb(156, 109, 51);
     padding: 15px 30px;
     border-radius: 10px;
     font-size: 1rem;
@@ -250,9 +250,10 @@
 }
 
 .contact-btn:hover {
-    background: linear-gradient(135deg, #0b5ed7 0%, #0a58ca 100%);
+    background: rgb(156, 109, 51);
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+    box-shadow: 0 8px 20px rgba(156, 109, 51, 0.3);
 }
 
 /* Responsive Design */
