@@ -130,7 +130,7 @@
 
 .product-category svg {
     font-size: 0.9rem;
-    color: #0d6efd;
+    color: rgb(156, 109, 51);
 }
 
 .stock-status {
@@ -167,7 +167,7 @@
 
 .original-price {
     font-size: 0.85rem;
-    color: #6c757d;
+    color: rgb(156, 109, 51);
     text-decoration: line-through;
     font-weight: 400;
 }
@@ -175,12 +175,13 @@
 .current-price {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #0d6efd;
+    color: rgb(156, 109, 51);
 }
 
 .view-details-btn {
-    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
-    color: white;
+    /* background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    color: white; */
+    color: rgb(156, 109, 51);
     border: none;
     padding: 10px 16px;
     border-radius: 8px;
@@ -195,9 +196,11 @@
 }
 
 .view-details-btn:hover {
-    background: linear-gradient(135deg, #0b5ed7 0%, #0a58ca 100%);
+    /* background: linear-gradient(135deg, #0b5ed7 0%, #0a58ca 100%); */
+    background-color: rgb(156, 109, 51);
+    color: white;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+    box-shadow: 0 4px 12px rgba(156, 109, 51, 0.3);
 }
 
 .view-details-btn svg {
