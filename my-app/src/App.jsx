@@ -1,16 +1,17 @@
-import NavBar from "./components/NavBar/Navbar";
-import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar/Navbar.jsx";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import {Gallary, Contact, About, Services} from "./components/NavBar/Pages";
 //import About from "./components/NavBar/Pages/About";
 //import Services from "./components/NavBar/Pages/Services/Services";
-import Footer from "./components/Footer/Footer"
-import Home from "./components/NavBar/Pages/Home/Home"
-import Products from "./components/NavBar/Pages/Products/Products"
+import Footer from "./components/Footer/Footer.jsx"
+import Home from "./components/NavBar/Pages/Home/Home.jsx"
+import Products from "./components/NavBar/Pages/Products/Products.jsx"
 // import './fonts/index.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="container">
         <NavBar />
         <Routes>
@@ -23,6 +24,7 @@ function App() {
         </Routes>
         <Footer/>
       </div>
+    </BrowserRouter>
   );
 }
 

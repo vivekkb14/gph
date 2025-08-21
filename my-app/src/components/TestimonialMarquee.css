@@ -1,0 +1,133 @@
+.testimonial-marquee-section {
+  width: 100%;
+  padding: 2rem 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.testimonial-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* Move keyframes outside any selector */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-inner {
+  animation: marqueeScroll 25s linear infinite;
+  display: flex;
+  min-width: 200%;
+  transform: translateZ(0);
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+.marquee-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-gradient-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5rem;
+  z-index: 10;
+  pointer-events: none;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.marquee-gradient-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5rem;
+  z-index: 10;
+  pointer-events: none;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.marquee-inner.marquee-reverse {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.testimonial-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: #fff;
+  width: 18rem;
+  flex-shrink: 0;
+  transition: box-shadow 0.2s;
+}
+.testimonial-card:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+.testimonial-card .card-header {
+  display: flex;
+  gap: 0.5rem;
+}
+.testimonial-card img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+}
+.testimonial-card .card-info {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card .card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.testimonial-card .card-handle {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+.testimonial-card .card-text {
+  font-size: 0.875rem;
+  color: #1f2937;
+  padding-top: 1rem;
+}
