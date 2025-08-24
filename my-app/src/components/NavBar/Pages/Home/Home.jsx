@@ -4,7 +4,7 @@ import machinesImage from '../../../../assets/Home/machines.png'
 import stethascpeImage from '../../../../assets/Home/stethascope.png'
 import doctors from '../../../../assets/Home/doctors.png'
 import frontPageImage from '../../../../assets/Home/front-page-view.jpg'
-//import TestimonialMarquee from '../../../TestimonialMarquee.jsx'
+import TestimonialMarquee from '../../../TestimonialMarquee.jsx'
 import Testimonials from '../../../Testimonials.jsx'
 import WhatsAppChat from '../CommonComponents/WhatsappComponent/WhatsappComponent.jsx'
 
@@ -119,7 +119,7 @@ export const Home = () => {
             <section ref={testimonialsSectionRef} className="testimonials-section fade-in">
                 <div className="testimonials-container">
                     <h2 className="testimonials-title">What Our Clients Say</h2>
-                    <Testimonials />
+                    <TestimonialMarquee />
                 </div>
             </section>
 

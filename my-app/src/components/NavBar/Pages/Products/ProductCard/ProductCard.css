@@ -16,6 +16,35 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+.card-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.delete-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* Product Image Container */
 .product-image-container {
     position: relative;

@@ -1,0 +1,23 @@
+.add-product-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-btn:hover {
+    background-color: #218838;
+    color: white;
+    text-decoration: none;
+}
+
+.add-product-btn svg {
+    width: 1.2em;
+    height: 1.2em;
+}

@@ -8,6 +8,32 @@
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
+/* Add Product Button */
+.add-product-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-button:hover {
+    background-color: #218838;
+    color: white;
+    text-decoration: none;
+}
+
+.add-product-button svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Header Section */
 .products-header {
     text-align: center;

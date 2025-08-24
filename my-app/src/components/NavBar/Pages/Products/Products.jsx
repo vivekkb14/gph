@@ -1,19 +1,22 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { color, motion } from 'framer-motion';
-import { FiSearch, FiGrid, FiList } from 'react-icons/fi';
+import { FiSearch, FiGrid, FiList, FiPlus } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard/ProductCard';
 import ProductTooltip from './ProductTooltip/ProductTooltip';
 import { sampleProducts } from './data/sampleProducts';
 import './Products.css';
 
 const Products = () => {
-    const [products] = useState(sampleProducts);
+    const [products, setProducts] = useState(sampleProducts);
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedBrand, setSelectedBrand] = useState('all');
     const [priceRange, setPriceRange] = useState({ min: 0, max: 10000 });
     const [prescriptionNeeded, setPrescriptionNeeded] = useState('all');
     const [sortBy, setSortBy] = useState('name');
+
+    // Product list is now read-only
     const [viewMode, setViewMode] = useState('grid');
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedProduct, setSelectedProduct] = useState(null);

@@ -29,7 +29,11 @@ const ProductCard = ({ product, onClick }) => {
         >
             <div className="product-image-container">
                 <img 
-                    src={product.image} 
+                    src={product.image.startsWith('data:image') 
+                        ? product.image 
+                        : product.image.startsWith('http') 
+                            ? product.image 
+                            : `http://localhost:3002${product.image}`} 
                     alt={product.name}
                     className="product-image"
                     onError={(e) => {
@@ -92,10 +96,12 @@ const ProductCard = ({ product, onClick }) => {
                         </span>
                     </div>
                     
-                    <button className="view-details-btn">
-                        <FiInfo />
-                        View Details
-                    </button>
+                    <div className="card-buttons">
+                        <button className="view-details-btn">
+                            <FiInfo />
+                            View Details
+                        </button>
+                    </div>
                 </div>
             </div>
         </motion.div>

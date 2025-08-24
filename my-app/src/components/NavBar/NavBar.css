@@ -48,6 +48,23 @@ nav ul li a:not(.active):hover {
     height: auto;
     cursor: pointer;
     border-radius: 15%;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: rgb(34, 140, 66);
     flex-shrink: 0;
 }
 
